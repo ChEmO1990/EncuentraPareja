@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageStep"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <me.grantland.widget.AutofitTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textStep"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textColor="@color/color_primary"
+        android:layout_alignTop="@+id/imageStep"
+        android:layout_toRightOf="@+id/imageStep"
+        android:layout_toEndOf="@+id/imageStep"
+        android:textSize="@dimen/title_item" />
+
+    <me.grantland.widget.AutofitTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subtitleStep"
+        android:singleLine="false"
+        android:padding="5dp"
+        android:textSize="@dimen/subtitle_item"
+        android:layout_below="@+id/textStep"
+        android:layout_toRightOf="@+id/imageStep"
+        android:layout_toEndOf="@+id/imageStep" />
+</RelativeLayout>
