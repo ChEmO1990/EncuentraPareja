@@ -2,6 +2,7 @@ package com.anselmo.encuentrapareja;
 
 import android.app.Application;
 
+import com.anselmo.encuentrapareja.analytics.AnalyticsManager;
 import com.anselmo.encuentrapareja.sqlite.DataBaseHelper;
 
 import java.io.IOException;
@@ -23,5 +24,8 @@ public class Encuentrapareja extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        //Init Google Analytics
+        AnalyticsManager.initializeAnalyticsTracker(this);
     }
 }

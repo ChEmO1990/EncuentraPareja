@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="ga_trackingId">UA-67282160-1</string>
+    <bool name="ga_autoActivityTracking">true</bool>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+    <string name="ga_appName">EncuentraPareja</string>
+    <bool name="ga_debug">false</bool>
+    <integer name="ga_dispatchPeriod">20</integer>
+    <string name="ga_sampleFrequency">90</string>
+    <bool name="ga_anonymizeIp">true</bool>
+    <bool name="ga_dryRun">false</bool>
+    <string name="ga_sampleFrequency">100.0</string>
+    <integer name="ga_sessionTimeout">-1</integer>
+    <string name="com.anselmo.encuentrapareja">EncuentraPareja</string>
+
+    <screenName name=".ui.HomeActivity">HomeActivity</screenName>
+    <screenName name=".ui.DescriptionDetailActivity">DescriptionDetailActivity</screenName>
+
+
+
+    <!-- TODO: add all activities -->
+</resources>

@@ -11,6 +11,7 @@ import android.widget.ListView;
 
 import com.anselmo.encuentrapareja.R;
 import com.anselmo.encuentrapareja.adapter.StepAdapter;
+import com.anselmo.encuentrapareja.analytics.AnalyticsManager;
 import com.anselmo.encuentrapareja.model.Step;
 import com.pushwoosh.BasePushMessageReceiver;
 import com.pushwoosh.BaseRegistrationReceiver;
@@ -54,11 +55,14 @@ public class HomeActivity extends BaseActivity {
         stepList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                AnalyticsManager.sendEvent("ListView Item", "click", "Paso: " + position);
                 Intent i = new Intent(HomeActivity.this, DescriptionDetailActivity.class);
                 i.putExtra("position_array", position);
                 startActivity(i);
             }
         });
+
+        AnalyticsManager.sendScreenView("HomeActivity");
 
         //Register receivers for push notifications
         registerReceivers();
@@ -79,6 +83,7 @@ public class HomeActivity extends BaseActivity {
         pushManager.registerForPushNotifications();
 
         checkMessage(getIntent());
+
     }
 
 

@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.anselmo.encuentrapareja.R;
+import com.anselmo.encuentrapareja.analytics.AnalyticsManager;
 import com.bumptech.glide.Glide;
 import com.vstechlab.easyfonts.EasyFonts;
 
@@ -43,6 +44,9 @@ public class DescriptionDetailActivity extends BaseActivity {
         if (extras != null) {
             position = extras.getInt("position_array");
         }
+
+        //Analytics
+        AnalyticsManager.sendScreenView("/home/description/step" + position);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
