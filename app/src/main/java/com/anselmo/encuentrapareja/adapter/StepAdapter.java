@@ -10,6 +10,7 @@ import android.widget.ImageView;
 
 import com.anselmo.encuentrapareja.R;
 import com.anselmo.encuentrapareja.model.Step;
+import com.vstechlab.easyfonts.EasyFonts;
 
 import java.util.ArrayList;
 
@@ -44,12 +45,16 @@ public class StepAdapter extends ArrayAdapter<Step> {
             holder.title = (AutofitTextView) row.findViewById(R.id.textStep);
             holder.subtitle = (AutofitTextView) row.findViewById(R.id.subtitleStep);
 
+            //Set Font
+            holder.title.setTypeface(EasyFonts.robotoLight(context));
+            holder.subtitle.setTypeface(EasyFonts.robotoLight(context));
+
             row.setTag(holder);
         } else {
             holder = (RecordHolder) row.getTag();
         }
 
-        //Setters
+        //Set info data
         holder.image.setImageResource( data.get(position).getResourceImage() );
         holder.title.setText(data.get(position).getTitle());
         holder.subtitle.setText(data.get(position).getSubtitle());

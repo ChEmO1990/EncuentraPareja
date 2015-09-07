@@ -54,7 +54,7 @@ public class HomeActivity extends BaseActivity {
         stepList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(HomeActivity.this, DescriptionStepActivity.class);
+                Intent i = new Intent(HomeActivity.this, DescriptionDetailActivity.class);
                 i.putExtra("position_array", position);
                 startActivity(i);
             }
@@ -80,6 +80,8 @@ public class HomeActivity extends BaseActivity {
 
         checkMessage(getIntent());
     }
+
+
 
 
     //Push
