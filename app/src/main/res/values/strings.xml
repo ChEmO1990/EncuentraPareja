@@ -219,4 +219,8 @@
         <b>Recuerda que el que no arriesga no gana  y solo se vive una vida y hay que
         vivirla, VIVELA  Y DISFRUTALA.</b> \n \n
     </string>
+
+
+    <string name="favorites_content">Is there an Android you particularly loved? Save it to your favorites and it will appear in a special list, which is pretty cool, huh?!</string>
+    <string name="favorite_title">Favorite</string>
 </resources>

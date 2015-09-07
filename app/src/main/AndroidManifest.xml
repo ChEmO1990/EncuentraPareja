@@ -33,6 +33,7 @@
         android:name="com.google.android.c2dm.permission.RECEIVE"/>
 
     <application
+        android:name=".Encuentrapareja"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -49,8 +50,8 @@
         </activity>
 
         <!-- Activities app -->
-        <activity android:name=".ui.DescriptionStepActivity"></activity>
         <activity android:name=".ui.HomeActivity"></activity>
+        <activity android:name=".ui.DescriptionDetailActivity"></activity>
 
         <activity android:name="com.pushwoosh.richpages.RichPageActivity" />
         <activity android:name="com.pushwoosh.MessageActivity" />
