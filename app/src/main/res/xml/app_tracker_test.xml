@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="ga_trackingId">UA-67282160-1</string>
+    <bool name="ga_autoActivityTracking">true</bool>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+    <string name="ga_appName">EncuentraPareja TEST</string>
+    <bool name="ga_debug">true</bool>
+    <integer name="ga_dispatchPeriod">20</integer>
+    <string name="ga_sampleFrequency">90</string>
+    <bool name="ga_anonymizeIp">true</bool>
+    <bool name="ga_dryRun">false</bool>
+    <string name="ga_sampleFrequency">100.0</string>
+    <integer name="ga_sessionTimeout">-1</integer>
+    <string name="com.anselmo.encuentrapareja">EncuentraPareja TEST</string>
+
+    <screenName name="com.naranya.tigo.ui.SplashActivity">Splash</screenName>
+    <screenName name="com.naranya.tigo.ui.RegisterPhoneActivity">Register phone</screenName>
+    <screenName name="com.naranya.tigo.ui.ValidatePhoneActivity">Validate phone</screenName>
+    <screenName name="com.naranya.tigo.ui.HomeActivity">Home</screenName>
+    <screenName name="com.naranya.tigo.ui.AppsFilterActivity">List</screenName>
+    <screenName name="com.naranya.tigo.ui.AcquisitionsActivity">My apps</screenName>
+    <screenName name="com.naranya.tigo.ui.CommentsActivity">Add comment</screenName>
+    <screenName name="com.naranya.tigo.ui.ContactTigoActivity">Contact</screenName>
+    <screenName name="com.naranya.tigo.ui.DetailActivity">Product detail</screenName>
+    <screenName name="com.naranya.tigo.ui.FAQSActivity">FAQ</screenName>
+    <screenName name="com.naranya.tigo.ui.FullCommentsActivity">Comments list</screenName>
+    <screenName name="com.naranya.tigo.ui.FullDescriptionActivity">Full description</screenName>
+    <screenName name="com.naranya.tigo.ui.SearchActivity">Search</screenName>
+    <screenName name="com.naranya.tigo.ui.TermsActivity">Terms</screenName>
+    <screenName name="com.naranya.tigo.ui.WishListActivity">My wishes</screenName>
+    <!-- TODO: add all activities -->
+</resources>
