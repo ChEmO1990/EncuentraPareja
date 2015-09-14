@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23"
+    buildToolsVersion "23.0.1"
 
     defaultConfig {
         applicationId "com.anselmo.encuentrapareja"
@@ -45,4 +45,18 @@ dependencies {
 
     //Easy Fonts
     compile 'com.vstechlab.easyfonts:easyfonts:1.0.0'
+
+    //SnackBar
+    compile 'com.github.mrengineer13:snackbar:1.2.0'
+
+    //Material dialogs
+    compile 'com.afollestad:material-dialogs:0.7.9.1'
+
+    //Custom EditText
+    compile project(':IconEditText')
+
+    //Custom material drawer library
+    compile project(':material_drawer')
+
+
 }

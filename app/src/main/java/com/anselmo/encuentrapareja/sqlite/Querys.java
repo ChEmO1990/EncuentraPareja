@@ -25,7 +25,7 @@ public class Querys {
 	 */
 	public static void addTip( Tip tipOfDay ) {
 		ContentValues newRegister = new ContentValues();
-		newRegister.put("id", tipOfDay.getId());
+		//newRegister.put("id", tipOfDay.getId());
 		newRegister.put("tip", tipOfDay.getTip());
 		newRegister.put("date", tipOfDay.getDate());
 

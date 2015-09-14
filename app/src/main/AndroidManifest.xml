@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.anselmo.encuentrapareja">
+    package="com.anselmo.encuentrapareja" >
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <!-- Permission to get DeviceId -->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <!-- GCM connects to Google Services. -->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- GCM requires a Google account. -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <!-- Keeps the processor from sleeping when a message is received. -->
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <!--
      Creates a custom permission so only this app can receive its messages.
-
      NOTE: the permission *must* be called PACKAGE.permission.C2D_MESSAGE,
            where PACKAGE is the application's package name.
     -->
     <permission
         android:name="com.anselmo.encuentrapareja.permission.C2D_MESSAGE"
-        android:protectionLevel="signature"/>
-    <uses-permission
-        android:name="com.anselmo.encuentrapareja.permission.C2D_MESSAGE"/>
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.anselmo.encuentrapareja.permission.C2D_MESSAGE" />
 
     <!-- This app has permission to register and receive data message. -->
-    <uses-permission
-        android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <application
         android:name=".Encuentrapareja"
@@ -38,10 +36,11 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-
         <activity
             android:name=".ui.SplashActivity"
-            android:label="@string/app_name" >
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -50,9 +49,16 @@
         </activity>
 
         <!-- Activities app -->
-        <activity android:name=".ui.HomeActivity"></activity>
-        <activity android:name=".ui.DescriptionDetailActivity"></activity>
-
+        <activity
+            android:name=".ui.HomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.DescriptionDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
         <activity android:name="com.pushwoosh.richpages.RichPageActivity" />
         <activity android:name="com.pushwoosh.MessageActivity" />
         <activity android:name="com.pushwoosh.PushHandlerActivity" />
@@ -63,29 +69,28 @@
             android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
                 <category android:name="com.anselmo.encuentrapareja" />
             </intent-filter>
         </receiver>
 
         <service
             android:name="com.pushwoosh.GCMListenerService"
-            android:exported="false">
+            android:exported="false" >
             <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
             </intent-filter>
         </service>
-
         <service
             android:name="com.pushwoosh.GCMInstanceIDListenerService"
-            android:exported="false">
+            android:exported="false" >
             <intent-filter>
-                <action android:name="com.google.android.gms.iid.InstanceID"/>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
             </intent-filter>
         </service>
-
         <service
             android:name="com.pushwoosh.GCMRegistrationService"
-            android:exported="false">
+            android:exported="false" >
         </service>
 
         <!-- Google Analytics -->
@@ -114,13 +119,41 @@
         <!-- campaign reporting -->
 
 
-        <!-- Metadata Push-->
-        <meta-data android:name="PW_APPID" android:value="67176-ECBF2" />
-        <meta-data android:name="PW_PROJECT_ID" android:value="A918040402975" />
+        <!-- Metadata Push -->
+        <meta-data
+            android:name="PW_APPID"
+            android:value="67176-ECBF2" />
+        <meta-data
+            android:name="PW_PROJECT_ID"
+            android:value="A918040402975" />
 
         <!-- Add the following meta-data for devices running Google Play service. -->
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".ui.TipsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_tips"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.ShowTipActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_show_tip"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.ContactActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_contact"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
     </application>
+
 </manifest>
