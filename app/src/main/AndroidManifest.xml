@@ -36,6 +36,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
         <activity
             android:name=".ui.SplashActivity"
             android:configChanges="orientation|keyboardHidden"
@@ -48,17 +49,7 @@
             </intent-filter>
         </activity>
 
-        <!-- Activities app -->
-        <activity
-            android:name=".ui.HomeActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name=".ui.DescriptionDetailActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+
         <activity android:name="com.pushwoosh.richpages.RichPageActivity" />
         <activity android:name="com.pushwoosh.MessageActivity" />
         <activity android:name="com.pushwoosh.PushHandlerActivity" />
@@ -132,6 +123,19 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+        <!-- Activities app -->
+        <activity
+            android:name=".ui.HomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".ui.DescriptionDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
         <activity
             android:name=".ui.TipsActivity"
             android:configChanges="orientation|keyboardHidden"
@@ -152,7 +156,15 @@
         </activity>
         <activity
             android:name=".ui.SettingsActivity"
-            android:label="@string/title_activity_settings" >
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.About"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_about" >
         </activity>
     </application>
 

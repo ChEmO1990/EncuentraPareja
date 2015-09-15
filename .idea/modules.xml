@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EncuentraPareja.iml" filepath="$PROJECT_DIR$/EncuentraPareja.iml" />
-      <module fileurl="file://$PROJECT_DIR$/IconEditText/IconEditText.iml" filepath="$PROJECT_DIR$/IconEditText/IconEditText.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/material_drawer/material_drawer.iml" filepath="$PROJECT_DIR$/material_drawer/material_drawer.iml" />
     </modules>

@@ -39,6 +39,8 @@ public class HomeActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        AnalyticsManager.sendScreenView("HomeActivity");
+
         Toolbar toolbar = getToolbar();
         toolbar.setTitle(getString(R.string.app_name_title));
         setSupportActionBar(toolbar);
@@ -71,7 +73,6 @@ public class HomeActivity extends BaseActivity {
             }
         });
 
-        AnalyticsManager.sendScreenView("HomeActivity");
     }
 
 
