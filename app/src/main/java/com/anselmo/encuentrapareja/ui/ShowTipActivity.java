@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.anselmo.encuentrapareja.R;
+import com.anselmo.encuentrapareja.analytics.AnalyticsManager;
 
 public class ShowTipActivity extends AppCompatActivity {
     private String tip;
@@ -25,6 +26,9 @@ public class ShowTipActivity extends AppCompatActivity {
             tip = extras.getString("push_tip");
             tipView.setText(tip);
         }
+
+
+        AnalyticsManager.sendScreenView("ShowTipActivity");
 
         Toolbar tool = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(tool);
@@ -52,5 +56,6 @@ public class ShowTipActivity extends AppCompatActivity {
         Intent i = new Intent( this, HomeActivity.class);
         i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(i);
+        finish();
     }
 }

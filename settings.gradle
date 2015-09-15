@@ -1,1 +1,1 @@
-include ':app', ':material_drawer', ':IconEditText'
+include ':app', ':material_drawer'

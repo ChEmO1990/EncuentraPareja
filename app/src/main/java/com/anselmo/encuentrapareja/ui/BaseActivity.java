@@ -83,7 +83,7 @@ public class BaseActivity extends DrawerActivity {
                 break;
 
             case 3:
-                Intent in = new Intent(this, ContactActivity.class);
+                Intent in = new Intent(this, SettingsActivity.class);
                 startActivity(in);
         }
     }

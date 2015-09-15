@@ -6,6 +6,7 @@ import android.widget.ListView;
 
 import com.anselmo.encuentrapareja.R;
 import com.anselmo.encuentrapareja.adapter.TipRceivedAdapter;
+import com.anselmo.encuentrapareja.analytics.AnalyticsManager;
 import com.anselmo.encuentrapareja.model.Tip;
 import com.anselmo.encuentrapareja.sqlite.Querys;
 import com.github.mrengineer13.snackbar.SnackBar;
@@ -23,6 +24,7 @@ public class TipsActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_generic_list);
 
+        AnalyticsManager.sendScreenView("TipsActivity");
         list = (ListView) findViewById(R.id.genericList);
 
         getSupportActionBar().setTitle(getString(R.string.action_show_tips));
