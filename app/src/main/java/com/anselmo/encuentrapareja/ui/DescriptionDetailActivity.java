@@ -6,6 +6,7 @@ package com.anselmo.encuentrapareja.ui;
 
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.text.Html;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -88,61 +89,61 @@ public class DescriptionDetailActivity extends BaseActivity {
             case 0:
                 loadBackdrop( IMAGES_ARRAY[0] );
                 collapsingToolbar.setTitle(titlesArraySteps[0]);
-                labelDescription.setText(getString(DESCRIPTION_ARRAY_RESOURCES[0]));
+                labelDescription.setText( Html.fromHtml( getString(DESCRIPTION_ARRAY_RESOURCES[0])) );
                 break;
 
             case 1:
                 loadBackdrop( IMAGES_ARRAY[1] );
                 collapsingToolbar.setTitle(titlesArraySteps[1]);
-                labelDescription.setText(getString(DESCRIPTION_ARRAY_RESOURCES[1]));
+                labelDescription.setText( Html.fromHtml( getString(DESCRIPTION_ARRAY_RESOURCES[1])) );
                 break;
 
             case 2:
                 loadBackdrop( IMAGES_ARRAY[2] );
                 collapsingToolbar.setTitle(titlesArraySteps[2]);
-                labelDescription.setText(getString(DESCRIPTION_ARRAY_RESOURCES[2]));
+                labelDescription.setText( Html.fromHtml( getString(DESCRIPTION_ARRAY_RESOURCES[2])) );
                 break;
 
             case 3:
                 loadBackdrop( IMAGES_ARRAY[3] );
                 collapsingToolbar.setTitle(titlesArraySteps[3]);
-                labelDescription.setText( getString( DESCRIPTION_ARRAY_RESOURCES[3]) );
+                labelDescription.setText( Html.fromHtml(getString(DESCRIPTION_ARRAY_RESOURCES[3])) );
                 break;
 
             case 4:
                 loadBackdrop( IMAGES_ARRAY[4] );
                 collapsingToolbar.setTitle(titlesArraySteps[4]);
-                labelDescription.setText( getString( DESCRIPTION_ARRAY_RESOURCES[4]) );
+                labelDescription.setText( Html.fromHtml(getString(DESCRIPTION_ARRAY_RESOURCES[4])) );
                 break;
 
             case 5:
                 loadBackdrop( IMAGES_ARRAY[5] );
                 collapsingToolbar.setTitle(titlesArraySteps[5]);
-                labelDescription.setText( getString( DESCRIPTION_ARRAY_RESOURCES[5]) );
+                labelDescription.setText( Html.fromHtml(getString(DESCRIPTION_ARRAY_RESOURCES[5])) );
                 break;
 
             case 6:
                 loadBackdrop( IMAGES_ARRAY[6] );
                 collapsingToolbar.setTitle(titlesArraySteps[6]);
-                labelDescription.setText( getString( DESCRIPTION_ARRAY_RESOURCES[6]) );
+                labelDescription.setText( Html.fromHtml(getString(DESCRIPTION_ARRAY_RESOURCES[6])) );
                 break;
 
             case 7:
                 loadBackdrop( IMAGES_ARRAY[7] );
                 collapsingToolbar.setTitle(titlesArraySteps[7]);
-                labelDescription.setText( getString( DESCRIPTION_ARRAY_RESOURCES[7]) );
+                labelDescription.setText( Html.fromHtml(getString(DESCRIPTION_ARRAY_RESOURCES[7])) );
                 break;
 
             case 8:
                 loadBackdrop( IMAGES_ARRAY[8] );
                 collapsingToolbar.setTitle(titlesArraySteps[8]);
-                labelDescription.setText( getString( DESCRIPTION_ARRAY_RESOURCES[8]) );
+                labelDescription.setText( Html.fromHtml(getString(DESCRIPTION_ARRAY_RESOURCES[8])) );
                 break;
 
             case 9:
                 loadBackdrop( IMAGES_ARRAY[9] );
                 collapsingToolbar.setTitle(titlesArraySteps[9]);
-                labelDescription.setText( getString( DESCRIPTION_ARRAY_RESOURCES[9]) );
+                labelDescription.setText( Html.fromHtml(getString(DESCRIPTION_ARRAY_RESOURCES[9])) );
                 break;
         }
     }
